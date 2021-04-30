@@ -17,7 +17,7 @@ The application uses the following software stack:
 --> mysql-connector-python 8.0.24
 --> SQLAlchemy             1.4.11
 
-3. Download and Install NodeJS as the prerequisite, after which, use npm to run the create-react-app command to install React. To start the frontend service, run the command npm start at the folder (....\create-react-app\minimart-app)
+3. Download and Install NodeJS as the prerequisite, after which, use npm command to install React. Run "create-react-app minimart-app" command to create a React project named minimart_app, then update the created src folder with the src folder uploaded in the Frontend folder. To start the frontend service, run the command npm start at the folder (....\create-react-app\minimart-app)
 
 # Attempted Objectives
 - Both Frontend Webpage and Backend API Server + ORM
