@@ -1,7 +1,7 @@
 # Minimart_App
 
 The application uses the following software stack:
-- Frontend: ReactJS
+- Frontend: ReactJS (Tested with Firefox 78 ESR)
 - Backend: Python Flask (Tested with Python version 3.7.2)
 - Database: MYSQL (Tested with version 5.5.62)
 - Database ORM with Backend: SQLAlchemy package
