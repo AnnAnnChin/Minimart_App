@@ -38,7 +38,7 @@ def query_all():
 @app.route("/api/item/create", methods=['POST'])
 def create():
 	params = request.json
-	
+
 	# Check if all parameters are provided
 	if not params.get("id") or not params.get("name") or not params.get("price"):
 		return {"success": False, "Message": "Missing parameters"}
@@ -55,7 +55,7 @@ def create():
 	item = Item.query.filter_by(id=params.get("id")).first()
 	
 	# Check if the item with the corresponding id does not exist
-	if item:
+	if not item:
 		# Create the item with the id, name, price, and insert it into database
 		item = Item(id=params.get("id"), name=params.get("name"), price=params.get("price"))
 		db.session.add(item)
@@ -100,7 +100,6 @@ def update():
 @app.route("/api/item/delete", methods=['POST'])
 def delete():
 	params = request.json
-	print (params)
 	
 	# Check if all parameters are provided
 	if not params.get("id"):
@@ -125,5 +124,5 @@ def delete():
 
 
 if __name__ == "__main__":
-	app.run(host='0.0.0.0', debug=False)
+	app.run(host='0.0.0.0', debug=True)
 	
