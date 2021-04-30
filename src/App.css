@@ -1,0 +1,45 @@
+html, body {
+	font-family: "Tw Cen MT";
+	font-size: 16px;
+	
+	background: linear-gradient(#C3D69B, #EBF1DE);
+	background-repeat: no-repeat;
+	
+	height: 100%;
+	width: 100%;
+}
+
+table {
+	border-collapse: collapse;
+}
+	
+input {
+	height: 25px;
+	width: 200px; 
+	
+	font-family: "Tw Cen MT";
+	font-size: 16px;
+}
+		
+button {
+	height: 25px;
+	width: 100px;
+	
+	font-family: "Tw Cen MT";
+	font-size: 16px;
+}
+
+.overlay {
+	position: fixed;
+	visibility: hidden;
+	background: #00000050;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;	
+}
+
+.form {
+	background: linear-gradient(#C3D69B, #EBF1DE);
+	background-repeat: no-repeat;
+}
