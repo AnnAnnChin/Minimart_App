@@ -148,7 +148,7 @@ function App() {
 				</table>
 			</div>
 			
-			<div id="overlay" className="overlay" onClick={() => hideForm()}>
+			<div id="overlay" className="overlay">
 				<div id="form" className="form" align="center">
 					<h1 id="form_label" align="center"></h1>
 					
@@ -156,22 +156,28 @@ function App() {
 						<tbody>
 							<tr>
 								<td width="50">ID</td>
-								<td><input id="input_id" type="number" readOnly="readonly"/></td>
+								<td colSpan="2"><input id="input_id" type="number" readOnly="readonly"/></td>
 							</tr>
 							
 							<tr>
 								<td width="50">Name</td>
-								<td><input id="input_name" type="text"/></td>
+								<td colSpan="2"><input id="input_name" type="text"/></td>
 							</tr>
 							
 							<tr>
 								<td width="50">Price</td>
-								<td><input id="input_price"/></td>
+								<td colSpan="2"><input id="input_price"/></td>
 							</tr>
 							
 							<tr>
-								<td colSpan="2" align="center">
+								<td width="50"/>
+								<td width="75" align="center">
 									<button id="form_button"/>
+								</td>
+								<td width="75" align="center">
+									<button onClick={() => hideForm()}>
+										Cancel
+									</button>
 								</td>
 							</tr>
 						</tbody>
